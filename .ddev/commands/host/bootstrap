@@ -2,3 +2,6 @@
 cp ${DDEV_APPROOT}/.env.example ${DDEV_APPROOT}/.env
 ddev wp core install --title="WP Sandbox" --url="https://wpdev.ddev.site" --admin_user=admin --admin_email=info@example.com --admin_password=localdev
 ddev wp plugin activate --all
+echo "Sandbox created at https://wpdev.ddev.site."
+echo "Login at https://wpdev.ddev.site/wp/wp-admin"
+echo "Username: admin / Password: localdev"
